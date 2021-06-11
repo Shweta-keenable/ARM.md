@@ -30,8 +30,11 @@ This instruction completes the OR operation in the data of the accumulator. ex:-
 
 The instructions of this group perform arithmetic operations such as: - Addition, subtraction, increment, decrement.
 
-## ADD- 
-यह register या memory के contents को accumulator के contents में add करता है. example:- ADD B 
+## ADD-
+
+It adds the contents of the register or memory to the contents of the accumulator. Example:- ADD B
+
+ 
 
 ## SUB- 
 
