@@ -8,11 +8,11 @@
  
 These instructions are used to transfer data from one register to another, and from memory to register or from register to memory. And there is no change in the contents of the source register in this.
 
-# Mov-
+## Mov-
 
 This instruction copies the contents of the source register to the destination register. Example:- MOV B, C.
 
-# LDA-
+## LDA-
 
 This is the load accumulator instruction. It is used to transfer the data present in the memory address to the accumulator. ex:- LDA 1000H.
 
@@ -44,7 +44,7 @@ By this the content of the register or memory location is subtracted from the co
 
 By this the data of register and memory location is incremented by 1. ex:- INR B or INR M.
 
-## Decr
+## Dcr
 
 It decrements the data of register and memory location by 1. ex:- DCR B or DCR M.
 
