@@ -86,10 +86,18 @@ Instructions to read/write from/to CPSR or SPSR
     hold information about the most recently performed ALU operation
 
     control the enabling and disabling of interrupts
-
+   
     set the processor operating mode. 
  
- 
+ Multiple Load-Store Instructions 
+   
+   • Transfers data between multiple regs & mem in single instruction
+   
+   • Instructions: LDM and STM • Use: stack, block move, temporary store & restore 
+   
+   • Advantages: small code size, single instruction fetch from memory 
+   
+   • Disadvantages: can’t be interrupted, increases interrupt latency 
   
   
   
