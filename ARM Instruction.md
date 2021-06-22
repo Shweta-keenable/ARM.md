@@ -76,7 +76,9 @@ This action restores the PC and CPSR, and returns to the instruction following t
  
 Instructions to read/write from/to CPSR or SPSR 
    • Instructions: MRS, MSR 
-   • Syntaxes: MRS{<cond>} Rd,<CPSR|SPSR> MSR{<cond>} <CPSR|SPSR>,Rm MSR{<cond>} <CPSR|SPSR>_<fields>,Rm MSR{<cond>}          <CPSR|SPSR>_<fields>,#immediate 
+   
+   • Syntaxes: MRS{<cond>} Rd,<CPSR|SPSR> MSR{<cond>} <CPSR|SPSR>,Rm MSR{<cond>} <CPSR|SPSR>_<fields>,Rm MSR{<cond>}          <CPSR|SPSR>_<fields>,#immediate
+   
    • Modifying CPSR, SPSR: Read, Modify and Write back technique o Read CPSR/SPSR using MRS o Modify relevant bits o Transfer to CPSR/SPSR using MSR • Note: 
    
    • In user mode all fields can be read, but flags alone can be modified N.
