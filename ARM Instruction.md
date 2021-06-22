@@ -74,7 +74,8 @@ This action restores the PC and CPSR, and returns to the instruction following t
  
 ## Program Status Registers
  
-Instructions to read/write from/to CPSR or SPSR 
+Instructions to read/write from/to CPSR or SPSR
+   
    • Instructions: MRS, MSR 
    
    • Syntaxes: MRS{<cond>} Rd,<CPSR|SPSR> MSR{<cond>} <CPSR|SPSR>,Rm MSR{<cond>} <CPSR|SPSR>_<fields>,Rm MSR{<cond>}          <CPSR|SPSR>_<fields>,#immediate
