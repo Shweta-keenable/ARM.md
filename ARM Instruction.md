@@ -2,7 +2,7 @@
 
 ARM defines two separate instruction sets 
 1- ARM state instruction set – 32-bit wide 
-2-Thumb state instruction set – 16-bit wide N. Mathivanan 
+2-Thumb state instruction set – 16-bit wide N. 
 
 # ARM State Instruction Set
 
