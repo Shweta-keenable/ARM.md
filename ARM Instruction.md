@@ -74,8 +74,12 @@ This action restores the PC and CPSR, and returns to the instruction following t
  
 ## Program Status Registers
  
- The processor has one Current Program Status Register (CPSR), and five Saved Program Status Registers (SPSRs) for exception handlers to use. The Program Status Registers:
-
+Instructions to read/write from/to CPSR or SPSR 
+   • Instructions: MRS, MSR 
+   • Syntaxes: MRS{<cond>} Rd,<CPSR|SPSR> MSR{<cond>} <CPSR|SPSR>,Rm MSR{<cond>} <CPSR|SPSR>_<fields>,Rm MSR{<cond>}          <CPSR|SPSR>_<fields>,#immediate 
+   • Modifying CPSR, SPSR: Read, Modify and Write back technique o Read CPSR/SPSR using MRS o Modify relevant bits o Transfer to CPSR/SPSR using MSR • Note: 
+   
+   • In user mode all fields can be read, but flags alone can be modified N.
     hold information about the most recently performed ALU operation
 
     control the enabling and disabling of interrupts
