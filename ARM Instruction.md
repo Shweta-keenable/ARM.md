@@ -61,6 +61,27 @@ Load and store instructions have three primary addressing modes:
  coprocessor register transfer instructions allow a coprocessor value to be transferred to or from an ARM register
 
  coprocessor data transfer instructions transfer coprocessor data to or from memory, where the ARM calculates the memory address of the transfer. 
+ 
+ ## Software interrupt instruction
+ 
+  Software Interrupt instruction (SWI) is used to enter Supervisor mode, usually to request a particular supervisor function. The SWI handler reads the opcode to extract the SWI function number.
+
+A SWI handler returns by executing the following irrespective of the processor operating state:
+
+MOVS PC, R14_svc
+
+This action restores the PC and CPSR, and returns to the instruction following the SWI.
+ 
+## Program Status Registers
+ 
+ The processor has one Current Program Status Register (CPSR), and five Saved Program Status Registers (SPSRs) for exception handlers to use. The Program Status Registers:
+
+    hold information about the most recently performed ALU operation
+
+    control the enabling and disabling of interrupts
+
+    set the processor operating mode. 
+ 
   
   
   
